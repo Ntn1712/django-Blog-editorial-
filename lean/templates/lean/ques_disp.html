@@ -1,0 +1,25 @@
+{% extends 'lean/default.html' %}
+
+{% block content %}
+
+<div style="text-align: center; width: 100%; left:0; right:0; top:0; bottom:0;  margin:auto; background: rgba(240, 220, 220, 0.473); padding: 15px;" >
+
+        <button type="submit" style="background-color:aliceblue; font-size:20px; float: right; border-radius:15px;"  ><a href="add_ques/">Ask a Query</a></button>
+        <div class="form-title-row" style="font-family: 'Bree Serif', serif; color: rgb(28, 31, 74); " >
+            <h1 style="padding-left: 120px;">QnA</h1>
+        </div>
+    
+        {% for field in disp5 %}
+    
+        <div class="content" style="border-width: 2px; border-style: solid; border-radius: 15px; font-family: 'Viga', sans-serif; padding: 15px;">
+            <div>
+            <h3 align="left">Ques : {{field.Ques}}</h3>
+            </div>
+        </div>
+    
+        {% endfor %}  
+        
+    </div>
+
+
+{% endblock %}

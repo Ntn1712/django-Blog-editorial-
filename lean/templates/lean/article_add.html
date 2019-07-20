@@ -1,0 +1,41 @@
+{% extends 'lean/default.html' %}
+
+{% block content %}
+
+<form class="form-register" method="post" action="#">
+        {% csrf_token %}
+        <div class="form-register-with-email">
+    
+            <div class="form-white-background">
+    
+                <div class="form-title-row" style="font-family: 'Bree Serif', serif; text-transform: uppercase; color: rgb(28, 31, 74);" >
+                    <h1 style="padding-left: 160px;">Add a blog</h1>
+                </div>
+                {% for field in form %}
+                <div class="form-row">
+                    {{ field.errors }}
+                    <label class=" center-block text-center" style="font-family: 'Viga', sans-serif; font-size:20px; text-transform: uppercase; color:rgb(28, 31, 74);">
+                        {{ field.label_tag }}
+                    </label>
+                    <div class="form-group-lg text-center" style="width:100%;">
+                        {{field}}
+                    </div>
+                    {% if field.help_text %}
+                    <p class="help">{{ field.help_text|safe }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+    
+                <div class="form-row">
+                        {% csrf_token %}
+                    <button class="center-block" type="submit">ADD</button>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    
+    </form>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    {%load static%}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Editorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!-- Latest compiled and minified CSS -->
+    <script rel="stylesheet" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <!--<script src="main.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/form-register.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/home.css' %}">
+
+    <!--for terms and condition-->
+  
+
+</head>
+<body >
+  <!--for terms and condition-->
+  
+
+<!--for navigation bar-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="{%url 'index'%}" class="navbar-brand"><span class="fas fa-info-circle"></span>About</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <ul class="nav navbar-nav">
+               <li><a href="posts">BLOG</a></li>
+              <li><a href="articles">POST</a></li>
+              <li><a href="listing">LISTING</a></li>
+              <li><a href='home'>DISCUSSION FORUMS</a></li>
+            </ul>
+            <a href="homie.html" class="navbar-brand navbar-right"><span class="fas fa-home"></span>HOME</a>
+          </div>
+        </div>
+    </nav>
+
+
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>

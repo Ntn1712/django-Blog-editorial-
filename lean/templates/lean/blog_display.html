@@ -1,0 +1,30 @@
+{% extends 'lean/default.html' %}
+
+{% block content %}
+
+<div style="text-align: center; width: 100%; left:0; right:0; top:0; bottom:0;  margin:auto; background: rgba(240, 220, 220, 0.473); padding: 15px;" >
+
+    <button type="submit" style="background-color:aliceblue; font-size:20px; float: right; border-radius:15px;"  ><a href="blogs/">Add a Blog</a></button>
+    <div class="form-title-row" style="font-family: 'Bree Serif', serif; color: rgb(28, 31, 74); " >
+        <h1 style="padding-left: 120px;">Blogs</h1>
+    </div>
+
+    {% for field in disp %}
+
+    <div class="content" style="border-width: 2px; border-style: solid; border-radius: 15px; font-family: 'Viga', sans-serif; padding: 15px;">
+        <div>
+        <h4><u>Topic</u></h4><h3>{{field.Topic}}</h3>
+        </div>
+        <div>
+        <h4><u>Content</u></h4><p>{{field.Content}}</p>
+        </div>
+        <div>
+        <h4>Submitted By : </h4><p>{{field.Name}}</p>
+        </div>
+    </div>
+
+    {% endfor %}  
+    
+</div>
+
+{% endblock %}

@@ -1,0 +1,158 @@
+{% extends 'lean/default.html' %}
+
+{% block content %}
+
+    <div style="width: 100%; left:0; right:0; top:0; bottom:0;  margin:auto; background: rgba(240, 220, 220, 0.473); padding: 15px;">
+
+        <div class="form-title-row" style=" text-align:center; font-family: 'Bree Serif', serif; color: rgb(28, 31, 74);" >
+            <h1>Best Locations</h1>
+        </div>
+
+
+        <div class="content" style="border-width: 2px; border-style: solid; border-radius: 15px; font-family: 'Viga', sans-serif; padding: 15px;">
+            <h2>Bangalore</h2>
+            <ul>
+                <li>Area : 709 km square</li>
+                <li>Population : 1.23 crores</li>
+                <li>Best Tourist Places :</li>
+                <ul>
+                    <li>Bangalore Palace</li>
+                    <li>National Gallery of Modern ART</li>
+                    <li>Lalbagh Botanical Garden</li>
+                    <li>Cubbon Park</li>
+                </ul>
+                <li>Best Schools :</li>
+                <ul>
+                    <li>HAL Public School</li>
+                    <li>National Acedemy of learning</li>
+                    <li>JSS Public School</li>
+                    <li>Jyothy Kendriya Vidyalaya</li>
+                </ul>
+                <li>Best Restaurants :</li>
+                <ul>
+                    <li>Byg Brewski Brewing Company, Sarjapur Road</li>
+                    <li>Absolute Barbecues, BTM</li>
+                    <li>Flechazo, Whitefield</li>
+                    <li>Asia kitchen By mainland China, Koramanagala 5th Block</li>
+                </ul>
+            </ul>
+            {% for field2 in disp2 %}
+            <div>
+                <h4><strong>Comments</strong></h2>
+                <p>{{field2.Comment}}</p>
+                <p>{{field2.Name}}</p>
+            </div>
+            {% endfor %}
+            
+            <button type="submit"><a href="bangalore/">Comment</a></button>
+        </div>
+        <div class="content" style="border-width: 2px; border-style: solid; border-radius: 15px; font-family: 'Viga', sans-serif; padding: 15px;">
+            <h2>Delhi</h2>
+            <ul>
+                <li>Area : 1484 km square</li>
+                <li>Population : 1.9 crores</li>
+                <li>Best Tourist Places :</li>
+                <ul>
+                    <li>Qutub Minar</li>
+                    <li>Humayun's Tomb</li>
+                    <li>Rashtrapati Bhavan</li>
+                    <li>India Gate</li>
+                </ul>
+                <li>Best Schools :</li>
+                <ul>
+                    <li>Delhi Public School, R K Puram</li>
+                    <li>Vasant Valley School, Vasant Kunj</li>
+                    <li>Sanskriti School, Chanakya Puri</li>
+                    <li>Apeejay School, Panchsheel Park</li>
+                </ul>
+                <li>Best Restaurants :</li>
+                <ul>
+                    <li>The Hong Kong Club</li>
+                    <li>Juniper Bar</li>
+                    <li>Dvar indian Restaurant</li>
+                    <li>Shang Palace</li>
+                </ul>
+            </ul>
+            {% for field1 in disp1 %}
+            <div>
+                <h4><strong>Comments</strong></h2>
+                <p>{{field1.Comment}}</p>
+                <p>{{field1.Name}}</p>
+            </div>
+            {% endfor %}
+            <button type="submit"><a href="delhi/">Comment</a></button>
+        </div>
+        <div class="content" style="border-width: 2px; border-style: solid; border-radius: 15px; font-family: 'Viga', sans-serif; padding: 15px;">
+            <h2>Chennai</h2>
+            <ul>
+                <li>Area : 426 km square</li>
+                <li>Population : 70.9 lakhs</li>
+                <li>Best Tourist Places :</li>
+                <ul>
+                    <li>kapaleeshwarar Temple</li>
+                    <li>Mylapore</li>
+                    <li>Tirumala Tirupati Devasthanams</li>
+                    <li>Sri Parthasarathy Temple</li>
+                </ul>
+                <li>Best Schools :</li>
+                <ul>
+                    <li>Chettinad Vidyashram</li>
+                    <li>DAV Boys Senior Secondary School</li>
+                    <li>The Schram Academy</li>
+                    <li>Padma Seshadri Bala Bhavan, Gerugambakkam</li>
+                </ul>
+                <li>Best Restaurants :</li>
+                <ul>
+                    <li>Coal Barbeques, Velachery</li>
+                    <li>Bhangra, Mayajaal Multiplex, Kanathpur</li>
+                    <li>Barbeque Nation, Thuraipakkam</li>
+                    <li>Bombay Lassi, Triplicane</li>
+                </ul>
+            </ul>
+            {% for field4 in disp4 %}
+            <div>
+                <h4><strong>Comments</strong></h2>
+                <p>{{field4.Comment}}</p>
+                <p>{{field4.Name}}</p>
+            </div>
+            {% endfor %}
+            <button type="submit"><a href="chennai/">Comment</a></button>
+        </div>
+        <div class="content" style="border-width: 2px; border-style: solid; border-radius: 15px; font-family: 'Viga', sans-serif; padding: 15px;">
+            <h2>Mumbai</h2>
+            <ul>
+                <li>Area : 603.4 km square</li>
+                <li>Population : 1.84 crores</li>
+                <li>Best Tourist Places :</li>
+                <ul>
+                    <li>Marine Drive</li>
+                    <li>Gateway of India</li>
+                    <li>Kanheri Caves</li>
+                    <li>Red Carpet Wax Museum</li>
+                </ul>
+                <li>Best Schools :</li>
+                <ul>
+                    <li>The CATHEDRAL and JOHN CANNON</li>
+                    <li>Campion School</li>
+                    <li>Jamnabai Narsee School, JVPD, Vile Parle</li>
+                    <li>Bombay Scottish School</li>
+                </ul>
+                <li>Best Restaurants :</li>
+                <ul>
+                    <li>plum By Bent Chair, Kamala Mills compound</li>
+                    <li>Trumpet Sky Lounge, Andheri Lokhandwala, Andheri West</li>
+                    <li>Global Fusion, Atria Mall</li>
+                    <li>Hitchki, R city mall, Ghatkopar West</li>
+                </ul>
+            </ul>
+            {% for field3 in disp3 %}
+            <div>
+                <h4><strong>Comments</strong></h2>
+                <p>{{field3.Comment}}</p>
+                <p>{{field3.Name}}</p>
+            </div>
+            {% endfor %}
+            <button type="submit"><a href="mumbai/">Comment</a></button>
+        </div>
+    </div>
+{% endblock %}    

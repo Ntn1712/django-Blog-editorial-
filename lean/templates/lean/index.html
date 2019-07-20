@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    {%load static%}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Editorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <!-- Latest compiled and minified CSS -->
+    <script rel="stylesheet" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+    <!--<script src="main.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/about.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/form-register.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/popup.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'lean/home.css' %}">
+    <script type="text/JavaScript" src="{% static 'lean/jquery.backgroundMove.js' %}"></script>
+    
+    <!--for terms and condition-->
+  
+
+</head>
+<body >
+
+  <div class="background-image"></div>
+  <!--for terms and condition-->
+  <h1 align="center">
+    <button style="background-color: aliceblue; color:aliceblue; border-radius: 15px; padding: 5px; font-size: 20px;"><a href="#open-modal">Terms & Conditions</a></button>
+  </h1>
+  <div id="open-modal" class="modal-window">
+    <div>
+      <a href="#model-close" title="close" class="modal-close">close &times;</a>
+      <h1>Terms & Conditions</h1>
+      <div>Last updated: ( “date”)<br>Please read these terms and conditions before carefully using the (“http://www.aaaa.com ”) website operated by (“company name”)<br>
+        Your access to and use of the service is conditioned on your acceptance of these terms. These terms apply to all the users, or others who use the service<br>
+        by accessing or using the service you agree to be bound by these terms. If you disagree with any part of the terms then you may not access the service<br>
+        if the site crashes we need a maximum of 72 hours before the site will be functioning again.<br>
+        our service may contain third party websites or services that are not owned or controlled by (“our company name”)<br>
+        (“our company name”) has no control over and assumes no responsibility for, the content, policies of any third party web sites.<br>
+        You further acknowledge and agree that (“company name”) shall not be responsible , directly or indirectly for any damage or loss caused or services available on or through any such websites or services<br>
+        <br><strong>Contact Us</strong><br><br>
+if you have any questions about these terms and conditions, please contact us.<br>
+(“number”)
+
+        
+
+      </div>
+    </div>
+  </div>
+<!--for navigation bar-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="{%url 'index'%}" class="navbar-brand"><span class="fas fa-info-circle"></span>About</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <ul class="nav navbar-nav">
+               <li><a href="posts">BLOG</a></li>
+              <li><a href="articles">POST</a></li>
+              <li><a href="listing">LISTING</a></li>
+              <li><a href='questions'>DISCUSSION FORUMS</a></li>
+            </ul>
+            <a href="home" class="navbar-brand navbar-right"><span class="fas fa-home"></span>HOME</a>
+          </div>
+        </div>
+    </nav>
+    <!--for content-->
+    <div class="container" id="para" style="border-radius: 15px; background-position: center;">
+    
+    <h2 id="imp" align="center">Project Description:</h2>
+    <h4 align="center">Nitin(17BCE0840)</h4>
+    <h4 align="center">Adithya Kumar(16BME0493)</h4>
+    <h4 align="center">Yash Jain(16BEE0192)</h4>
+    <h4 align="center">Satnam Bhatia(16BEE0060)</h4>
+    <h4 align="center">Bhanodhay(17BEC0209)</h4>    
+    <h4 align="center">Mohammed Adil(16BME0919)</h4>
+    </div>
+
+    <div class="content-section-b" style="padding-top:50px; ">
+    
+</body>
+</html>
